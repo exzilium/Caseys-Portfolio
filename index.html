@@ -11,14 +11,11 @@
   <body>
     <!-- Header with name, profile picture, and navigation links to sections within main content -->
     <header>
-      <h1>Casey Dwyer</h1>
-      <h2>Dev in progress!</h2>
-      <figure>
-        <img src="" alt="Casey's profile picture" />
-      </figure>
-
+        <h1>Casey Dwyer</h1>
+        <p>Developer in progress!</p>
+        <img src="./assets/images/casey_default.jpeg" alt="Casey's profile picture" />
       <!-- navigation panel -->
-      <nav>
+      <nav class="nav-bar">
         <ul>
           <li><a href="#">About Me</a></li>
           <li><a href="#">My Work</a></li>
@@ -31,20 +28,26 @@
     <main>
       <!-- About Me -->
       <section class="card" id="about-me">
-        <h2>about me.</h2>
-        <p>
-          I'm Casey. I'm a product manager who has started to learn about web
-          development.
-        </p>
+        <div class="section-header">
+          <h2>about me.</h2>
+        </div>
+        <section class="big-card">
+          <p>
+            I'm Casey. I'm a product manager who has started to learn about web
+            development.
+          </p>
+        </section>
       </section>
 
       <!-- My work section which contains several project sections -->
       <section class="card" id="my-work">
-        <h2>my work.</h2>
-        <p>Not much to show yet! More coming soon.</p>
-
+        <div class="section-header">
+          <h2>my work.</h2>
+        </div>
+        <!-- parent grid for flexible project cards -->
+        <div class="project-grid">
         <!-- Main project (Project 1) spanning full viewport -->
-        <section class="main-project">
+        <section class="big-card">
           <h3>Project 1</h3>
           <img src="#" alt="Project 1 Image Link" />
         </section>
@@ -52,27 +55,35 @@
         <!-- Additional Projects spanning half viewport each inline -->
 
         <!-- Project 2 -->
-        <section class="sub-project">
+        <section class="small-card">
           <h3>Project 2</h3>
           <img src="#" alt="Project 2 Image Link" />
         </section>
 
         <!-- Project 3-->
-        <section class="sub-project">
+        <section class="small-card">
           <h3>Project 3</h3>
           <img src="#" alt="Project 3 Image Link" />
         </section>
       </section>
+    </div>
 
+    
       <!-- Contact section with links to email etc.-->
       <section class="card" id="contact-me">
-        <h2>contact Casey.</h2>
-        <img src="" alt="Casey's profile picture" />
-        <ul>
-          <li><a href="#">Email</a></li>
-          <li><a href="#">Phone</a></li>
-          <li><a href="#">GitHub</a></li>
-        </ul>
+        <div class="section-header">
+          <h2>contact Casey.</h2>
+          <figure class="profile-image">
+            <img src="" alt="Casey's profile picture" />
+          </figure>
+        </div>
+        <section class="big-card">
+          <ul>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </section>
       </section>
     </main>
 
