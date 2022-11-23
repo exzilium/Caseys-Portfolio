@@ -15,7 +15,7 @@ header {
 
 header img {
   max-width: 10%;
-display: inline;
+  display: inline;
 }
 
 .nav-bar {
@@ -31,18 +31,18 @@ display: inline;
 }
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
 .big-card {
-    width: 80%;
+  width: 80%;
 }
 
 .small-card {
-    width: 33%;
+  width: 33%;
 }
 
 section {
@@ -64,4 +64,36 @@ footer {
   border-color: blueviolet;
   border-style: solid;
   margin: 20px;
+  text-align: center;
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .project-grid {
+    justify-content: center;
+  }
+  .big-card {
+    width: 100%;
+  }
+  .small-card {
+    width: 100%;
+  }
+}
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  .nav-bar li {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
 }
