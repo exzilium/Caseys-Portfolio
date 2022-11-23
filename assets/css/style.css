@@ -89,6 +89,10 @@ footer {
     display: block;
     text-align: center;
   }
+  .standard-card li {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Small smartphones */
