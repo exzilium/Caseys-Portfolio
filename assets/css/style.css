@@ -1,21 +1,44 @@
 html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  color: #f3eff8;
+}
+
+a {
+  color: #f3eff8;
+}
+
+/* mouse over link */
+a:hover {
+  color: #be69ff;
+}
+
+/* selected link */
+a:active {
+  color: #7676ff;
 }
 
 header {
-  border: 3px;
-  border-color: purple;
-  border-style: solid;
-  margin: 20px;
-  text-align: right;
-  margin-right: 10%;
-  margin-top: 5%;
+  text-align: center;
+  background-color: #12111a;
+  filter: drop-shadow(0 0 5px rgb(144, 144, 144));
 }
 
-header img {
+header h1 {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-size: 36px;
+}
+
+header p {
+  padding-bottom: 1%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.standard-card img {
   max-width: 10%;
-  display: inline;
+  margin-top: 1%;
 }
 
 .nav-bar {
@@ -30,6 +53,10 @@ header img {
   display: inline;
 }
 
+body {
+  background-color: #504e74;
+}
+
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +66,20 @@ header img {
 
 .big-card {
   width: 80%;
+  height: 200px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(176, 176, 176, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("/assets/images/horiseaon_refactor.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.big-card h3 {
+  position: relative;
+  bottom: 0;
 }
 
 .small-card {
