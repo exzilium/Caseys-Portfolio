@@ -1,8 +1,11 @@
+/* Main fonts and colors */
+
 html {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #f3eff8;
 }
+
+/* Link colors and styles */
 
 a {
   color: #f3eff8;
@@ -17,6 +20,8 @@ a:hover {
 a:active {
   color: #7676ff;
 }
+
+/* Header styles for name, blurb, and nav links */
 
 header {
   text-align: center;
@@ -36,10 +41,7 @@ header p {
   font-style: italic;
 }
 
-.standard-card img {
-  max-width: 10%;
-  margin-top: 1%;
-}
+/* Nav bar styles */
 
 .nav-bar ul {
   padding-top: 10px;
@@ -51,9 +53,47 @@ header p {
   text-decoration: none;
 }
 
+/* html element styles for body and headers within cards */
+
 body {
   background-color: #504e74;
 }
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+section {
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card contains each full section
+Standard Cards contain for each About Me, My Work, and Contact sections */
+
+.card {
+  margin: 20px;
+  padding: 10px;
+  border-color: #e7cafc;
+  border-bottom: #414141;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.standard-card img {
+  max-width: 10%;
+  margin-top: 1%;
+}
+
+/* Set project cards to flex for responsive behavior */
 
 .project-grid {
   display: flex;
@@ -62,12 +102,17 @@ body {
   align-content: flex-start;
 }
 
-h2 {
-  font-size: 24px;
-}
+/* My Work section project cards. 
+Big Card is top card to showcase most relevant work.
+Small Cards for other work */
 
 .big-card {
-  width: 80%;
+  width: 100%;
+  border: 3px;
+  border-color: rgb(200, 152, 252);
+  border-style: solid;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .big-card img {
@@ -75,24 +120,21 @@ h2 {
 }
 
 .small-card {
-  width: 33%;
-}
-
-section {
+  width: 45%;
   border: 3px;
-  border-color: black;
+  border-color: rgb(216, 188, 245);
   border-style: solid;
+  border-radius: 5px;
   margin: 20px;
-}
-
-div {
-  margin: 20px;
+  padding: 25px;
 }
 
 footer {
   margin: 20px;
   text-align: center;
 }
+
+/* Media queries for smaller devices */
 
 /* Tablets */
 @media screen and (max-width: 992px) {
@@ -107,7 +149,7 @@ footer {
   }
 }
 
-/* Large smartphones */
+/* Smartphones */
 @media screen and (max-width: 768px) {
   header {
     text-align: center;
@@ -121,6 +163,9 @@ footer {
     text-align: center;
   }
   h2 {
+    text-align: center;
+  }
+  .card {
     text-align: center;
   }
 }
